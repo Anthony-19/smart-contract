@@ -2,10 +2,11 @@
 pragma solidity ^0.8.30;
 
 contract ERC20{
+    // stable coin, whatever i send you will still remain the exact amount i sent you.
     string private _name;
     string private _symbol;
     uint8 private immutable _decimals;
-    uint private _totalSupply;
+    uint private _totalSupply; // Can be referenced to internal Accounting
 
     mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowances;
@@ -71,4 +72,5 @@ contract ERC20{
         balances[_to] += _value;
         emit Transfer(address(0), _to, _value);
     }
+//Total supply just help you keep the token in circulation inside the contract
 }

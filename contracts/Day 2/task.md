@@ -26,3 +26,19 @@ Because storage is the only possible location for mappings, the compiler automat
 Mappings are implemented internally using a hashing mechanism, which allows values to be retrieved using a key. However, they do not actually store keys the way arrays store indexes.
 
 Instead, they behave like a permanent key-value lookup table that exists on-chain. Since they must always live in storage, you don’t need to specify memory or storage when declaring them.
+
+
+//Lecturer
+Call data, what does it signify: It is like read only and they are immutable. You only use them with only function that is it must be external. but recent version 
+they are immatable by nature,
+And cant be changed
+
+When you have your mapping, what is the purpose of your mapping, Trying to track data, there is something you want to do with the data and when ever the data is increased or decreased, if it is stored in memory.
+
+two memory location: Memory or calldata
+
+All your technology runs on web2
+
+When and where we can use mappings and array
+You have all the person properties and all of them have been pushed into an array,
+What is your project structures. If your key will hold as many properties, You use an array and can
